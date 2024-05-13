@@ -2,7 +2,6 @@ package dev.turwaith.helldiversapiaccess.DTOs
 
 import com.google.gson.annotations.SerializedName
 
-
 data class Setting (
     @SerializedName("type"            ) var type            : Int?             = null,
     @SerializedName("overrideTitle"   ) var overrideTitle   : String?          = null,
@@ -11,5 +10,4 @@ data class Setting (
     @SerializedName("tasks"           ) var tasks           : ArrayList<Tasks> = arrayListOf(),
     @SerializedName("reward"          ) var reward          : Reward?          = Reward(),
     @SerializedName("flags"           ) var flags           : Int?             = null
-
 )
