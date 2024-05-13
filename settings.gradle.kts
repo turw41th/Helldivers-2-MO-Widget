@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Major Order Widget"
 include(":app")
+include(":HelldiversApiAccess")
