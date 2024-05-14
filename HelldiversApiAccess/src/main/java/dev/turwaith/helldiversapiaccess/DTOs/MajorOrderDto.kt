@@ -5,4 +5,6 @@ data class MajorOrderDto(
     var title: String,
     var description: String,
     var descriptionLong: String,
+    var goal: Int,
+    var expiresIn: Int
 )
