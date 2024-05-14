@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <!-- Task Description Label -->
+    <TextView
+        android:id="@+id/taskDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskDescriptionLabel"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:progress="0"
+        android:max="100"/>
+
+    <!-- Progress Label -->
+    <TextView
+        android:id="@+id/progressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:text="0 / 0 (0.00%)"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Remaining Time Label -->
+    <TextView
+        android:id="@+id/remainingTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressLabel"
+        android:text="Remaining Time: 0d 0h 0m"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Reload Button -->
+    <Button
+        android:id="@+id/reloadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remainingTimeLabel"
+        android:text="Reload"/>
+
+</LinearLayout>
